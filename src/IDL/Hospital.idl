@@ -1,10 +1,10 @@
 module hospitales {
 
     interface hospital{
-        boolean insertartercero(in long codigoHospital, in wstring nombre, in wstring direccion, in wstring telefono, in char estado);
-        boolean actualizartercero(in long codigoHospital, in wstring nombre, in wstring direccion, in wstring telefono, in char estado);
-        boolean eliminartercero(in long codigoHospital);
-        wstring consultartercero(in long codigoHospital);
+        boolean insertarHospital(in long codigoHospital, in wstring nombre, in wstring direccion, in wstring telefono, in char estado);
+        boolean actualizarHospital(in long codigoHospital, in wstring nombre, in wstring direccion, in wstring telefono, in char estado);
+        boolean eliminarHospital(in long codigoHospital);
+        wstring consultarHospital(in long codigoHospital);
 
         oneway void shoutdown();
 
